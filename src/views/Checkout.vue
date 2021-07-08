@@ -44,7 +44,6 @@
               class="stripe-card"
               :class="{ complete }"
               stripe="pk_test_XXXXXXXXXXXXXXXXXXXXXXXX"
-              :options="stripeOptions"
               @change="complete = $event.complete"
             />
 
@@ -53,7 +52,7 @@
               @click="pay"
               :disabled="!complete"
             >
-              Pay with credit card
+              Pay with card
             </button>
           </form>
         </div>
